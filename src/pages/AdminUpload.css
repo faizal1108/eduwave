@@ -1,0 +1,149 @@
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Changed height to min-height */
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+.upload-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #666;
+  font-weight: 500;
+}
+
+.input-group input[type="text"],
+.input-group input[type="file"],
+.input-group textarea,
+.input-group input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.input-group input[type="file"] {
+  padding: 5px;
+}
+
+.upload-btn,
+.add-question-btn,
+.delete-question-btn {
+  background-color: #4fa3f7;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover,
+.add-question-btn:hover
+{
+  background-color: #357abf;
+}
+.delete-question-btn:hover {
+  background-color: #ce0e0e;
+}
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.quiz-question {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.quiz-question input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+@media (max-width: 480px) {
+  .upload-box {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .input-group input[type="text"],
+  .input-group input[type="file"],
+  .input-group textarea,
+  .input-group input[type="number"],
+  .upload-btn,
+  .add-question-btn,
+  .delete-question-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .upload-btn,
+  .add-question-btn,
+  .delete-question-btn {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
